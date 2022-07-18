@@ -1,0 +1,21 @@
+.section-1 {
+   padding: 60px 25px;
+}
+.section-1__title {
+   margin-bottom: 30px;
+}
+.section-1__subtitle {
+   margin-bottom: 60px;
+}
+.section-1__gardient {
+   color: transparent;
+   background: linear-gradient(to right, #ffffff, #61a9d1);
+   background-repeat: no-repeat;
+   background-clip: text; 
+   background-clip: text; 
+   text-transform: uppercase;
+} 
+.section-1__social-box {
+   justify-content: flex-start;
+}
+

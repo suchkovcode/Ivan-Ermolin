@@ -1,0 +1,147 @@
+.section-1 {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.section-1__title {
+   transition: color 0.2s linear;
+}
+.section-1__title:hover {
+   color: #fff;
+}
+
+/* About block */
+.about {
+   min-height: 220px;
+   padding: 90px 25px;
+   border-bottom: 1px solid var(--color_border);
+}
+.about__title {
+   margin-bottom: 40px;
+}
+
+.about__gardient {
+   color: transparent;
+   background: linear-gradient(to right, #ffffff, #61a9d1);
+   background-repeat: no-repeat;
+   background-clip: text; 
+} 
+
+/* Section brand block */
+.section-1__brand {
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between;
+   min-height: 220px;
+   padding: 30px;
+   border-bottom: 1px solid var(--color_border);
+}
+.section-1__title-box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+@media all and (min-width: 475px) {
+   .about {
+      min-height: 300px;
+   }
+   .section-1__brand {
+      min-height: 300px;
+   }
+   .section-1__img {
+      width: 160px;
+      height: auto;
+   }
+}
+@media all and (min-width: 768px) {
+   .section-1 {
+      grid-template-columns: 1fr 1fr;
+   }
+   .about {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 30px;
+      border-right: 1px solid var(--color_border);
+   }
+   .section-1__brand {
+      height: 340px;
+   }
+   .custom,
+   .mentor {
+      border-right: 1px solid var(--color_border);
+   }
+}
+@media all and (min-width: 992px) {
+   .section-1__brand, 
+   .about {
+      padding: 40px;
+   }
+}
+@media all and (min-width: 1200px) {
+   .section-1 {
+      grid-template-columns: 1.7fr 1fr 1fr;
+      grid-template-areas: 'about molotov custom'
+                           'about mentor van'
+                           'shkaf mentor van';
+   }
+   .section-1__img {
+      width: 130px;
+   }
+
+   .about {
+      padding: 100px 40px 100px 120px;
+      grid-area: about;
+   }
+   .molotov {
+      grid-area: molotov;
+      border-right: 1px solid var(--color_border);
+   }
+   .custom {
+      grid-area: custom;
+   }
+   .shkaf {
+      padding: 40px 40px 40px 120px;
+      height: 200px;
+      min-height: 200px;
+      grid-area: shkaf;
+      border-right: 1px solid var(--color_border);
+   }
+   .mentor {
+      grid-area: mentor;
+   }
+   .van {
+      grid-area: van;
+   }
+}
+
+@media all and (min-width: 1366px) {
+   .section-1 {
+      grid-template-columns: 1.8fr 1fr 1fr;
+     
+   }
+   .section-1__brand {
+      padding: 60px;
+      min-height: 430px;
+   }
+   .section-1__img {
+      width: 180px;
+   }
+   .about {
+      padding: 100px 40px 100px 180px;
+      height: calc(70vh - 5px);
+      min-height: 610px;
+   }
+   .shkaf {
+      padding: 40px 40px 40px 180px;
+      height: calc(30vh - 5px);
+      min-height: 250px;
+   }
+   .molotov,
+   .custom,
+   .mentor,
+   .van   {
+      height: calc(50vh - 5px);
+   }
+}

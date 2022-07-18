@@ -1,0 +1,13 @@
+/* Базовый свойства */
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/var';
+@import 'base/global';
+/* Компоненты */
+@import 'components/header';
+@import 'components/button';
+@import 'components/form';
+@import 'components/footer';
+/* Страницы */
+@import 'page/index/section-1';
+@import 'page/index/section-2';

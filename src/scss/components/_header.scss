@@ -1,0 +1,111 @@
+/* Свойства для бургера */
+.header__burger-box {
+   position: fixed;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   gap: 1px;
+   top: 25px;
+   right: 25px;
+   width: 25px;
+   height: 25px;
+   z-index: 15;
+}
+.header__burger-icon {
+   width: 12px;
+   height: 12px;
+   border: 1px solid var(--color_burger);
+   border-radius: 50%;
+   transition: background-color, 0.2s linear;
+}
+.header__burger-icon--open {
+   background-color: var(--color_burger);
+}
+
+
+
+/* Свойства для выпадающего меню */
+.nav {
+   position: fixed;
+   visibility: hidden;
+   top: 0;
+   right: -100%;
+   z-index: 10; 
+   width: 90%;
+   height: 100%;
+   padding: 65px 30px 30px 30px;
+   background-color: var(--color_nav);
+   transition: right 0.4s linear, visibility 0.4s linear;
+}
+.nav--open {
+   visibility: visible;
+   right: 0;
+}
+.nav__list {
+   display: flex;
+   flex-flow: column;
+   gap: 10px;
+   margin-bottom: 140px;
+   
+}
+.nav__list-item {
+   font: var(--font_nav_item);
+   color: var(--color_text_nav);
+   transition: color 0.2s linear;
+}
+.nav__list-item:hover {
+   color: #fff;
+}
+
+
+
+/* Социальный бокс */
+.social-box {
+   display: flex;
+   gap: 30px;
+   margin-top: 50px;
+}
+.social-box__item {
+   font: var(--font_social-box);
+   color: var(--color_text_nav);
+   transition: color 0.2s linear;
+}
+.social-box__item:hover {
+   color: #fff;
+}
+
+
+@media all and (min-width: 475px) {
+   .nav {
+      padding: 65px 30px 30px 50px;
+   }
+}
+@media all and (min-width: 576px) {
+   .nav {
+      width: 70%;
+   }
+}
+@media all and (min-width: 768px) {
+   .nav {
+      padding: 85px 30px 50px 75px;
+   }
+}
+@media all and (min-width: 992px) {
+   .header__burger-box {
+      top: 40px;
+      right: 57px;
+   }
+   .nav {
+      width: 50%;
+   }
+}
+@media all and (min-width: 1200px) {
+   .nav {
+      width: 30%;
+   }
+}
+@media all and (min-width: 1366px) {
+   .nav {
+      width: 30%;
+   }
+}
