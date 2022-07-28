@@ -70,8 +70,7 @@ exports.wp =
       $.task.wp.transfer.img,
       $.task.wp.transfer.video,
       $.task.wp.transfer.webp,
-      $.task.wp.styles
-   );
+      $.task.wp.styles);
 
 
 
