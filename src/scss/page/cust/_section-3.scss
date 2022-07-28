@@ -1,0 +1,111 @@
+.section-3 {
+   contain: layout paint;
+   &__grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      border-bottom: 1px solid var(--color_grey_3);
+      @media all and (min-width: 768px) {
+         grid-template-columns: 1fr 1fr;
+      }
+      @media all and (min-width: 992px) {
+         grid-template-columns: 1fr 2fr;
+      }
+      @media all and (min-width: 992px) {
+         grid-template-areas: 
+         'tittle paragraf'
+         'separator separator';
+         border-bottom: 0px solid var(--color_grey_3);
+      }
+   }
+
+   &__title {
+      margin-bottom: 30px;
+      padding: 60px 30px 0px 30px;
+      font: 300 22px/1.45 "RF Dewi";
+      color: var(--color_base);
+
+      @media all and (min-width: 576px) {
+         font: 300 24px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 768px) {
+         padding: 80px 30px;
+         margin-bottom: 0px;
+         border-right: 1px solid var(--color_grey_3);
+      }
+      @media all and (min-width: 1200px) {
+         grid-area: tittle;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 200px 80px 200px 0px;
+         font: 300 30px/1.45 "RF Dewi";
+      }
+   }
+
+   &__paragraf-box {
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+      padding: 0 30px 60px 30px;
+      @media all and (min-width: 768px) {
+         padding: 80px 30px;
+      }
+      @media all and (min-width: 992px) {
+         padding: 80px 60px;
+      }
+      @media all and (min-width: 1200px) {
+         grid-area: paragraf;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 200px 80px;
+      }
+
+   }
+
+   &__paragraf {
+      max-width: 500px;
+      font: 400 14px/1.45 "RF Dewi";
+      color: var(--color_grey);
+      @media all and (min-width: 1366px) {
+         max-width: 550px;
+         font: 400 18px/1.45 "RF Dewi";
+      }
+   }
+  
+   &__img-box {
+      display: flex;
+   }
+   &__img {
+      width: 50vw;
+      height: 270px;
+      object-fit: cover;
+      @media all and (min-width: 475px) {
+         height: 350px;
+      }
+      @media all and (min-width: 576px) {
+         height: 450px;
+      }
+      @media all and (min-width: 768px) {
+         height: 500px;
+      }
+      @media all and (min-width: 992px) {
+         height: 650px;
+      }
+      @media all and (min-width: 1200px) {
+         height: 750px;
+      }
+      @media all and (min-width: 1366px) {
+         height: 950px;
+      }
+   }
+}
+.separator {
+   display: none;
+   @media all and (min-width: 992px) {
+      display: block;
+      width: 160%;
+      height: 1px;
+      background-color: var(--color_grey_3);
+      transform: translateX(-20%);
+      grid-area: separator;
+   }
+}

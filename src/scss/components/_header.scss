@@ -14,12 +14,12 @@
 .header__burger-icon {
    width: 12px;
    height: 12px;
-   border: 1px solid var(--color_burger);
+   border: 1px solid var(--color_grey);
    border-radius: 50%;
    transition: background-color, 0.2s linear;
 }
 .header__burger-icon--open {
-   background-color: var(--color_burger);
+   background-color: var(--color_grey);
 }
 
 
@@ -34,7 +34,7 @@
    width: 90%;
    height: 100%;
    padding: 65px 30px 30px 30px;
-   background-color: var(--color_nav);
+   background-color: var(--color_dark);
    transition: right 0.4s linear, visibility 0.4s linear;
 }
 .nav--open {
@@ -46,17 +46,33 @@
    flex-flow: column;
    gap: 10px;
    margin-bottom: 140px;
-   
 }
 .nav__list-item {
-   font: var(--font_nav_item);
-   color: var(--color_text_nav);
+   font: var(--font_nav_list);
+   color: var(--color_grey);
    transition: color 0.2s linear;
 }
 .nav__list-item:hover {
    color: #fff;
 }
 
+
+/* Кнопка назад */
+.btn-back {
+   display: flex;
+   align-items: center;
+   margin-bottom: 30px;
+   gap: 10px;
+   transition: color 0.2s linear;
+}
+.btn-back__text {
+   font: var(--font_btn_back);
+   color: var(--color_grey);
+}
+.btn-back:hover,
+.btn-back__text:hover {
+   color: #fff;
+}
 
 
 /* Социальный бокс */
@@ -66,8 +82,8 @@
    margin-top: 50px;
 }
 .social-box__item {
-   font: var(--font_social-box);
-   color: var(--color_text_nav);
+   font: var(--font_social_box);
+   color: var(--color_grey);
    transition: color 0.2s linear;
 }
 .social-box__item:hover {
@@ -75,21 +91,26 @@
 }
 
 
+
 @media all and (min-width: 475px) {
    .nav {
       padding: 65px 30px 30px 50px;
    }
 }
+
 @media all and (min-width: 576px) {
    .nav {
       width: 70%;
    }
 }
+
 @media all and (min-width: 768px) {
    .nav {
+      width: 60%;
       padding: 85px 30px 50px 75px;
    }
 }
+
 @media all and (min-width: 992px) {
    .header__burger-box {
       top: 40px;
@@ -99,13 +120,9 @@
       width: 50%;
    }
 }
+
 @media all and (min-width: 1200px) {
    .nav {
-      width: 30%;
-   }
-}
-@media all and (min-width: 1366px) {
-   .nav {
-      width: 30%;
+      width: 35%;
    }
 }

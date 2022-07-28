@@ -1,0 +1,17 @@
+/* Базовый свойства */
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/var';
+@import 'base/global';
+/* Компоненты */
+@import 'components/header';
+@import 'components/button';
+@import 'components/form';
+@import 'components/cta';
+@import 'components/popup';
+@import 'components/footer';
+/* Страницы */
+@import 'page/molotov/section-1.scss';
+@import 'page/molotov/section-2.scss';
+@import 'page/molotov/section-3.scss';
+@import 'page/molotov/section-4.scss';

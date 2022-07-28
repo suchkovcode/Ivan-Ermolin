@@ -1,0 +1,138 @@
+.section-2 {
+   padding: 60px 30px;
+   background-color: var(--color_bg_grey);
+   @media all and (min-width: 768px) {
+      padding: 0px 0px;
+   }
+
+   &__grid-container {
+      @media all and (min-width: 768px) {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas:
+            "text img"
+            "pr_2 img";
+         grid-row-gap: 20px;
+      }
+      @media all and (min-width: 992px) {
+         grid-template-columns: 1fr 2fr;
+      }
+   }
+
+   &__text-box {
+      @media all and (min-width: 768px) {
+         padding: 60px 30px 0px 30px;
+         grid-area: text;
+      }
+      @media all and (min-width: 1200px) {
+         padding: 100px 30px 0px 0px;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 120px 60px 0px 0px;
+      }
+   }
+
+   &__title {
+      margin-bottom: 20px;
+      font: 300 18px/1.45 "RF Dewi";
+      color: var(--color_primary);
+      @media all and (min-width: 576px) {
+         font: 300 24px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 768px) {
+         font: 300 24px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 30px/1.45 "RF Dewi";
+      }
+   }
+
+   &__paragraf-1,
+   &__paragraf-2 {
+      font: 400 14px/1.45 "RF Dewi";
+      color: var(--color_grey_3);
+      @media all and (min-width: 1200px) {
+         font: 400 16px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 400 18px/1.45 "RF Dewi";
+      }
+   }
+   &__paragraf-1 {
+      margin-bottom: 15px;
+   }
+   &__paragraf-2 {
+      margin-bottom: 30px;
+      @media all and (min-width: 768px) {
+         padding: 0px 30px 60px 30px;
+         margin-bottom: 0px;
+         align-self: end;
+      }
+      @media all and (min-width: 1200px) {
+         padding: 0px 30px 100px 00px;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 0px 60px 120px 0px;
+      }
+   }
+
+   &__img-box {
+      position: relative;
+      padding-bottom: 25px;
+      @media all and (min-width: 576px) {
+         padding-bottom: 45px;
+      }
+      @media all and (min-width: 768px) {
+         padding: 50px 30px;
+         grid-area: img;
+         border-left: 1px solid var(--color_grey);
+      }
+      @media all and (min-width: 1200px) {
+         padding-bottom: 100px;
+      }
+      @media all and (min-width: 1200px) {
+         padding-bottom: 180px;
+      }
+   }
+   &__img-1,
+   &__img-2 {
+      width: 70%;
+      height: auto;
+      @media all and (min-width: 768px) {
+         width: 100%;
+      }
+      @media all and (min-width: 992px) {
+         max-width: 450px;
+         margin: 0 auto;
+      }
+      @media all and (min-width: 1200px) {
+         max-width: 500px;
+         margin: 0;
+      }
+      @media all and (min-width: 1366px) {
+         max-width: 650px;
+      }
+   }
+   &__img-2 {
+      position: absolute;
+      top: 15%;
+      left: 35%;
+      @media all and (min-width: 768px) {
+         position: static;
+      }
+      @media all and (min-width: 1200px) {
+         position: absolute;
+         top: 15%;
+         left: 35%;
+      }
+   }
+}
+
+@media all and (min-width: 768px) {
+   .section-2__paragraf-1 {
+      grid-area: pr_1;
+   }
+   .section-2__paragraf-2 {
+      grid-area: pr_2;
+   }
+}

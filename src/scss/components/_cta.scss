@@ -1,0 +1,203 @@
+.cta {
+   padding: 60px 0;
+   border-bottom: 1px solid var(--color_grey_3);
+
+   @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+         "title bullet_list"
+         "title form";
+      padding: 0 0;
+      grid-row-gap: 50px;
+   }
+   @media all and (min-width: 992px) {
+      grid-template-columns: 1.6fr 1.4fr;
+      grid-template-areas:
+         "title form"
+         "bullet_list form";
+      grid-row-gap: 0px;
+   }
+   @media all and (min-width: 1200px) {
+      grid-template-areas:
+         "title form"
+         "bullet_list form"
+         "separator separator";
+      grid-row-gap: 0px;
+      border-bottom: 0px solid var(--color_grey_3);
+   }
+
+   &__title {
+      max-width: 420px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      padding: 0px 30px;
+      font: 300 18px/1.35 "RF Dewi";
+      color: var(--color_base);
+      text-transform: uppercase;
+
+      @media all and (min-width: 768px) {
+         max-width: none;
+         margin: 0;
+         padding: 60px 0px 0px 30px;
+         border-right: 1px solid var(--color_grey_3);
+         grid-area: title;
+      }
+      @media all and (min-width: 992px) {
+         font: 300 22px/1.35 "RF Dewi";
+         padding: 80px 0px 0px 30px;
+      }
+      @media all and (min-width: 1200px) {
+         font: 300 26px/1.35 "RF Dewi";
+         padding: 80px 0px 0px 0px;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 120px 0px 0px 0px;
+         font: 300 30px/1.35 "RF Dewi";
+      }
+   }
+
+   &__billet-list {
+      display: flex;
+      flex-flow: column;
+      gap: 5px;
+      max-width: 420px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding: 0 30px;
+
+      @media all and (min-width: 768px) {
+         margin: 0;
+         max-width: none;
+         padding: 60px 30px 0px 30px;
+         grid-area: bullet_list;
+      }
+      @media all and (min-width: 992px) {
+         padding: 30px 30px 80px 30px;
+         border-right: 1px solid var(--color_grey_3);
+      }
+      @media all and (min-width: 1200px) {
+         padding: 0px 30px 80px 0px;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 0px 30px 120px 0px;
+      }
+   }
+
+   &__bullet-item {
+      font: 300 14px/1.45 "RF Dewi";
+      color: var(--color_grey);
+      @media all and (min-width: 768px) {
+         font: 300 16px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1200px) {
+         font: 300 18px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 20px/1.45 "RF Dewi";
+      }
+   }
+   &__form-box {
+      padding: 0 30px;
+      @media all and (min-width: 768px) {
+         padding-bottom: 60px;
+         grid-area: form;
+      }
+      @media all and (min-width: 992px) {
+         padding: 80px 30px;
+      }
+      @media all and (min-width: 1200px) {
+         padding: 80px 60px;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 120px 80px;
+      }
+   }
+}
+
+.cta-2 {
+   padding: 60px 30px;
+   border-bottom: 1px solid var(--color_grey_3);
+   @media all and (min-width: 576px) {
+      padding: 80px 30px;
+   }
+   @media all and (min-width: 992px) {
+      padding: 100px 30px;
+   }
+   @media all and (min-width: 1200px) {
+      padding: 120px 30px;
+      border-bottom: 0px solid var(--color_grey_3);
+   }
+   @media all and (min-width: 1366px) {
+      padding: 150px 30px;
+   }
+   &__title {
+      max-width: 260px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      font: 300 18px/1.45 "RF Dewi";
+      color: var(--color_base);
+      text-align: center;
+      @media all and (min-width: 576px) {
+         max-width: none;
+      }
+      @media all and (min-width: 768px) {
+         font: 300 22px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 992px) {
+         font: 300 24px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1200px) {
+         font: 300 26px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 30px/1.45 "RF Dewi";
+      }
+   }
+
+   &__paragraf {
+      max-width: 260px;
+      margin: 0 auto;
+      font: 300 14px/1.45 "RF Dewi";
+      color: var(--color_grey);
+      text-align: center;
+      margin-bottom: 30px;
+      @media all and (min-width: 576px) {
+         max-width: none;
+      }
+      @media all and (min-width: 768px) {
+         font: 300 16px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 992px) {
+         font: 300 18px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 20px/1.45 "RF Dewi";
+      }
+   }
+
+   &__btn {
+      display: flex;
+      width: 220px;
+      margin: 0 auto;
+      @media all and (min-width: 576px) {
+         width: 260px;
+         height: 50px;
+      }
+      @media all and (min-width: 1200px) {
+         width: 340px;
+         height: 65px;
+      }
+   }
+}
+
+.form__btn {
+   margin: 0;
+   margin-top: 15px;
+}
+
+@media all and (min-width: 768px) {
+   .form {
+      margin: 0;
+   }
+}

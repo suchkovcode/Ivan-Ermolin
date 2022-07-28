@@ -1,5 +1,6 @@
 .page {
    background-color: var(--color_bg);
+   scrollbar-width: none;
 }
 .main {
    contain: layout paint;
@@ -15,23 +16,14 @@
    background-position:center;
    opacity: 2%;
 }
-
-
-.title {
-   font: var(--font_title);
-   color: var(--color_title);
-}
-.title-2 {
-   font: var(--font_title-2);
-   color: var(--color_title);
-}
-.title-3 {
-   font: var(--font_title-3);
-   color: var(--color_title);
-}
-
-
-.subtitle {
-   font: var(--font_subtitle);
-   color: var(--color_subtitle);
+.gardient {
+   color: transparent;
+   background: linear-gradient(to right, #ffffff 0%, #61a9d1 100%);
+   background-repeat: no-repeat;
+   background-clip: text; 
+   text-transform: uppercase;
+} 
+::-webkit-scrollbar {
+   width: 0;
+   height: 0;
 }

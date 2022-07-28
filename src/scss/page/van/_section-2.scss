@@ -1,0 +1,151 @@
+.section-2 {
+   padding: 60px 30px;
+   contain: layout paint;
+   content-visibility: auto;
+   @media all and (min-width: 992px) {
+      padding: 0px 0px;
+   }
+
+   &__grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      @media all and (min-width: 992px) {
+         grid-template-columns: 1fr 2fr;
+         grid-template-areas:
+            "title box"
+            "title paragraf";
+         border-bottom: 1px solid var(--color_grey_3);
+      }
+      @media all and (min-width: 1200px) {
+         grid-template-columns: 1fr 2fr;
+         grid-template-areas:
+            "title box"
+            "title paragraf"
+            "separator separator";
+         border-bottom: 0px solid var(--color_grey_3);
+      }
+   }
+   &__title {
+      font: 300 18px/1.45 "RF Dewi";
+      color: var(--color_base);
+      margin-bottom: 30px;
+
+      @media all and (min-width: 576px) {
+         font: 300 24px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 992px) {
+         padding-top: 60px;
+         padding-left: 30px;
+         grid-area: title;
+      }
+      @media all and (min-width: 1200px) {
+         padding-top: 80px;
+         padding-left: 0px;
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 28px/1.45 "RF Dewi";
+      }
+   }
+
+   &__bullet-box {
+      display: flex;
+      flex-flow: column;
+      gap: 30px;
+      padding-bottom: 30px;
+      @media all and (min-width: 992px) {
+         padding-top: 60px;
+         padding-left: 30px;
+         border-left: 1px solid var(--color_grey_3);
+      }
+      @media all and (min-width: 1200px) {
+         padding-top: 80px;
+         padding-left: 80px;
+      }
+   }
+
+   &__bullet-item {
+      display: flex;
+      gap: 10px;
+      @media all and (min-width: 576px) {
+         gap: 30px;
+      }
+      @media all and (min-width: 992px) {
+         grid-area: box;
+      }
+   }
+
+   &__number-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 30px;
+      max-height: 30px;
+      margin-top: 5px;
+      background-color: #4a4a4a;
+      @media all and (min-width: 576px) {
+         min-width: 45px;
+         max-height: 45px;
+      }
+   }
+
+   &__number {
+      font: 700 14px/1.45 "RF Dewi";
+      color: #373737;
+      @media all and (min-width: 576px) {
+         font: 700 18px/1.45 "RF Dewi";
+      }
+   }
+
+   &__bullet-title {
+      font: 300 16px/1.45 "RF Dewi";
+      color: transparent;
+      background: linear-gradient(to right, #ffffff 0%, #61a9d1 100%);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      @media all and (min-width: 576px) {
+         font: 300 20px/1.45 "RF Dewi";
+         max-width: 450px;
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 22px/1.45 "RF Dewi";
+         max-width: 550px;
+      }
+   }
+
+   &__paragraf {
+      font: 300 12px/1.45 "RF Dewi";
+      color: var(--color_grey);
+      @media all and (min-width: 576px) {
+         font: 300 14px/1.45 "RF Dewi";
+         max-width: 600px;
+      }
+      @media all and (min-width: 992px) {
+         padding-left: 30px;
+         padding-bottom: 30px;
+         grid-area: paragraf;
+         border-left: 1px solid var(--color_grey_3);
+      }
+      @media all and (min-width: 1200px) {
+         padding-left: 80px;
+         padding-bottom: 80px;
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 16px/1.45 "RF Dewi";
+         max-width: 700px;
+      }
+   }
+}
+
+.separator {
+   display: none;
+   @media all and (min-width: 992px) {
+      display: block;
+      width: 160%;
+      height: 1px;
+      background-color: var(--color_grey_3);
+      transform: translateX(-20%);
+      grid-area: separator;
+   }
+}

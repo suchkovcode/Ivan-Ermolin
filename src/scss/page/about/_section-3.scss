@@ -1,0 +1,357 @@
+.section-3 {
+   padding: 60px 0px;
+   overflow: hidden;
+}
+.fact-box {
+   display: grid;
+   grid-template-columns: 1fr;
+   &__item {
+      position: relative;
+      padding: 30px 30px;
+      border-bottom: 1px solid var(--color_grey_3);
+   }
+   &__title {
+      max-width: 350px;
+      margin-bottom: 15px;
+      font: 300 16px/1.45 "RF Dewi";
+      color: var(--color_base);
+   }
+   &__title--font {
+      font: 400 16px/1.45 "RF Dewi";
+   }
+   &__paragraf {
+      font: 400 14px/1.4 "RF Dewi";
+      color: var(--color_grey_2);
+   }
+   &__number-box {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: var(--color_grey_4);
+   }
+   &__number {
+      font: 700 18px/1.4 "RF Dewi";
+      color: var(--color_grey_5);
+   }
+}
+.about-box {
+   position: relative;
+   display: grid;
+   grid-template-columns: 1fr;
+   padding: 60px 0px 0px 0px;
+   @media all and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto 1px auto;
+      grid-template-areas:
+         "img bullet_1"
+         "img separator"
+         "img bullet_2";
+   }
+   @media all and (min-width: 992px) {
+      padding: 0px;
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+         "bullet_1 img"
+         "bullet_2 img";
+   }
+   @media all and (min-width: 1200px) {
+      padding: 0px;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto 1px auto;
+      grid-template-areas:
+         "bullet_1 img"
+         "separator img"
+         "bullet_2 img";
+   }
+
+   &__img {
+      display: block;
+      padding: 0 30px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+
+      @media all and (min-width: 576px) {
+         height: 350px;
+         object-fit: cover;
+         object-position: 0 -160px;
+      }
+      @media all and (min-width: 768px) {
+         padding: 0 30px 30px 30px;
+         height: 100%;
+         object-position: -50px 0;
+         grid-area: img;
+      }
+      @media all and (min-width: 992px) {
+         height: 700px;
+         padding: 0;
+         object-position: 0 0;
+      }
+      @media all and (min-width: 1200px) {
+         height: 750px;
+         width: 125%;
+         object-position: -30px 0;
+      }
+      @media all and (min-width: 1366px) {
+         width: 125%;
+         height: 850px;
+      }
+      @media all and (min-width: 1500px) {
+         width: 180%;
+         height: 1050px;
+      }
+   }
+
+   &__bullet-1 {
+      padding: 30px 30px;
+      border-bottom: 1px solid var(--color_grey_3);
+
+      @media all and (min-width: 768px) {
+         padding: 0px 30px 30px 30px;
+         border-bottom: 0px solid var(--color_grey_3);
+         grid-area: bullet_1;
+      }
+      @media all and (min-width: 992px) {
+         padding: 60px 30px;
+         border-bottom: 1px solid var(--color_grey_3);
+      }
+      @media all and (min-width: 1200px) {
+         padding: 60px 30px 30px 0px;
+         border-bottom: 0px solid var(--color_grey_3);
+      }
+      @media all and (min-width: 1366px) {
+         padding: 100px 30px 100px 0px;
+         align-self: center;
+      }
+   }
+
+   &__bullet-2 {
+      padding: 30px 30px 0px 30px;
+
+      @media all and (min-width: 768px) {
+         padding: 30px 30px 30px 30px;
+         grid-area: bullet_2;
+      }
+      @media all and (min-width: 992px) {
+         padding: 60px 30px;
+      }
+      @media all and (min-width: 1200px) {
+         padding: 60px 30px 0px 0px;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 100px 30px 100px 0px;
+         align-self: center;
+      }
+   }
+
+   &__separator {
+      display: none;
+      @media all and (min-width: 768px) {
+         position: absolute;
+         z-index: -1;
+         display: block;
+         width: 180vw;
+         height: 1px;
+         background-color: var(--color_grey_3);
+         transform: translateX(-20%);
+         grid-area: separator;
+      }
+      @media all and (min-width: 992px) {
+         display: none;
+      }
+      @media all and (min-width: 1200px) {
+         display: block;
+      }
+   }
+
+   &__bullet-title {
+      font: 300 20px/1.35 "RF Dewi";
+      color: var(--color_base);
+      margin-bottom: 15px;
+
+      @media all and (min-width: 768px) {
+         font: 300 22px/1.35 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 26px/1.35 "RF Dewi";
+      }
+   }
+
+   &__bullet-list {
+      display: flex;
+      flex-flow: column;
+      gap: 5px;
+   }
+
+   &__bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font: 400 14px/1.35 "RF Dewi";
+      color: var(--color_grey_2);
+
+      @media all and (min-width: 768px) {
+         font: 400 16px/1.35 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 400 18px/1.35 "RF Dewi";
+      }
+   }
+
+   &__bullet-item::before {
+      content: " ";
+      min-width: 5px;
+      min-height: 5px;
+      margin-top: 6px;
+      border-radius: 50%;
+      background-color: var(--color_grey_2);
+   }
+}
+
+@media all and (min-width: 576px) {
+   .fact-box__title {
+      font: 300 18px/1.45 "RF Dewi";
+   }
+   .fact-box__title--font {
+      font: 400 18px/1.45 "RF Dewi";
+   }
+   .fact-box__paragraf {
+      font: 400 16px/1.4 "RF Dewi";
+   }
+}
+@media all and (min-width: 768px) {
+   .section-3 {
+      padding: 0px;
+   }
+   .fact-box {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+         "col1 item_2"
+         "col1 item_3"
+         "col1 item_4"
+         "col1 item_5"
+         "col1 item_6";
+   }
+   .fact-box__item {
+      padding: 30px 30px;
+   }
+   .fact-box__title {
+      max-width: 600px;
+   }
+   .fact-box__item-1 {
+      grid-area: col1;
+      padding-top: 60px;
+      border-right: 1px solid var(--color_grey_3);
+   }
+   .fact-box__item-2 {
+      padding-top: 60px;
+      grid-area: item_2;
+      border-right: 1px solid var(--color_grey_3);
+   }
+   .fact-box__item-3 {
+      grid-area: item_3;
+   }
+   .fact-box__item-4 {
+      grid-area: item_4;
+      border-right: 1px solid var(--color_grey_3);
+   }
+   .fact-box__item-5 {
+      grid-area: item_5;
+      border-right: 1px solid var(--color_grey_3);
+   }
+   .fact-box__item-6 {
+      grid-area: item_6;
+   }
+}
+@media all and (min-width: 992px) {
+   .fact-box {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+         "col1 item_2 item_3"
+         "item_4 item_5 item_6";
+   }
+   .fact-box__item {
+      padding: 30px 30px 60px 30px;
+   }
+   .fact-box__number-box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+   }
+}
+@media all and (min-width: 1200px) {
+   .fact-box {
+      grid-template-areas:
+         "col1 item_2 item_3"
+         "separator_1 separator_1 separator_1"
+         "item_4 item_5 item_6"
+         "separator_2 separator_2 separator_2";
+   }
+   .fact-box__item {
+      padding: 60px 30px 80px 30px;
+      border-bottom: 0px solid var(--color_grey_3);
+   }
+   .fact-box__item-1,
+   .fact-box__item-4 {
+      padding: 60px 30px 60px 0px;
+   }
+   .fact-box__title {
+      font: 300 20px/1.45 "RF Dewi";
+   }
+   .fact-box__title--font {
+      font: 400 20px/1.45 "RF Dewi";
+   }
+   .fact-box__paragraf {
+      font: 400 18px/1.4 "RF Dewi";
+   }
+   .fact-box__number-box {
+      width: 50px;
+      height: 50px;
+   }
+   .fact-box__number {
+      font: 700 22px/1.4 "RF Dewi";
+   }
+   .separator-1 {
+      display: block;
+      margin-left: -50%;
+      width: 1000%;
+      height: 1px;
+      background-color: var(--color_grey_3);
+      grid-area: separator_1;
+   }
+   .separator-2 {
+      display: block;
+      margin-left: -50%;
+      width: 1000%;
+      height: 1px;
+      background-color: var(--color_grey_3);
+      grid-area: separator_2;
+   }
+}
+@media all and (min-width: 1366px) {
+   .fact-box__item {
+      padding: 80px 30px 100px 30px;
+      border-bottom: 0px solid var(--color_grey_3);
+   }
+   .fact-box__item-1,
+   .fact-box__item-4 {
+      padding: 80px 30px 100px 0px;
+   }
+   .fact-box__title {
+      font: 300 23px/1.45 "RF Dewi";
+   }
+   .fact-box__title--font {
+      font: 400 23px/1.45 "RF Dewi";
+   }
+   .fact-box__number-box {
+      width: 60px;
+      height: 60px;
+   }
+   .fact-box__number {
+      font: 700 24px/1.4 "RF Dewi";
+   }
+}

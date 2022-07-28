@@ -1,0 +1,41 @@
+.section-4 {
+   padding: 60px 30px;
+   border-bottom: 1px solid var(--color_grey_3);
+   @media all and (min-width: 768px) {
+      padding: 80px 30px;
+   }
+   @media all and (min-width: 1200px) {
+      padding: 100px 30px;
+   }
+   @media all and (min-width: 1366px) {
+      padding: 120px 30px;
+   }
+
+   &__title {
+      max-width: 400px;
+      margin: 0 auto;
+      font: 300 16px/1.45 "RF Dewi";
+      color: var(--color_base);
+      @media all and (min-width: 576px) {
+         max-width: 500px;
+         font: 300 18px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 768px) {
+         max-width: 500px;
+      }
+      @media all and (min-width: 992px) {
+         max-width: 650px;
+         font: 300 20px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1200px) {
+         font: 300 22px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         max-width: 750px;
+         font: 300 24px/1.45 "RF Dewi";
+      }
+   }
+}
+mark {
+   color: rgb(97, 169, 209);;
+}

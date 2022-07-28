@@ -2,54 +2,49 @@
    display: grid;
    grid-template-columns: 1fr;
 }
-.section-1__title {
-   transition: color 0.2s linear;
-}
-.section-1__title:hover {
-   color: #fff;
-}
+
 
 /* About block */
 .about {
    min-height: 220px;
    padding: 90px 25px;
-   border-bottom: 1px solid var(--color_border);
+   border-bottom: 1px solid var(--color_grey_3);
 }
 .about__title {
+   font: var(--font_index_title);
+   color: var(--color_base);
    margin-bottom: 40px;
 }
 
-.about__gardient {
-   color: transparent;
-   background: linear-gradient(to right, #ffffff, #61a9d1);
-   background-repeat: no-repeat;
-   background-clip: text; 
-} 
 
 /* Section brand block */
-.section-1__brand {
+.brand {
    display: flex;
    flex-flow: column;
    justify-content: space-between;
    min-height: 220px;
    padding: 30px;
-   border-bottom: 1px solid var(--color_border);
+   border-bottom: 1px solid var(--color_grey_3);
 }
-.section-1__title-box {
+.brand__title-box {
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 10px;
+}
+.brand__title {
+   font: var(--font_index_brand_title);
+   color: var(--color_base);
 }
 
 @media all and (min-width: 475px) {
    .about {
       min-height: 300px;
    }
-   .section-1__brand {
+   .brand {
       min-height: 300px;
    }
-   .section-1__img {
+   .brand__img {
       width: 160px;
       height: auto;
    }
@@ -63,18 +58,18 @@
       flex-flow: column;
       justify-content: center;
       padding: 30px;
-      border-right: 1px solid var(--color_border);
+      border-right: 1px solid var(--color_grey_3);
    }
-   .section-1__brand {
+   .brand {
       height: 340px;
    }
    .custom,
    .mentor {
-      border-right: 1px solid var(--color_border);
+      border-right: 1px solid var(--color_grey_3);
    }
 }
 @media all and (min-width: 992px) {
-   .section-1__brand, 
+   .brand, 
    .about {
       padding: 40px;
    }
@@ -86,7 +81,7 @@
                            'about mentor van'
                            'shkaf mentor van';
    }
-   .section-1__img {
+   .brand__img {
       width: 130px;
    }
 
@@ -96,7 +91,7 @@
    }
    .molotov {
       grid-area: molotov;
-      border-right: 1px solid var(--color_border);
+      border-right: 1px solid var(--color_grey_3);
    }
    .custom {
       grid-area: custom;
@@ -106,7 +101,7 @@
       height: 200px;
       min-height: 200px;
       grid-area: shkaf;
-      border-right: 1px solid var(--color_border);
+      border-right: 1px solid var(--color_grey_3);
    }
    .mentor {
       grid-area: mentor;
@@ -121,11 +116,11 @@
       grid-template-columns: 1.8fr 1fr 1fr;
      
    }
-   .section-1__brand {
+   .brand {
       padding: 60px;
       min-height: 430px;
    }
-   .section-1__img {
+   .brand__img {
       width: 180px;
    }
    .about {
@@ -134,7 +129,7 @@
       min-height: 610px;
    }
    .shkaf {
-      padding: 40px 40px 40px 180px;
+      padding: 60px 60px 60px 180px;
       height: calc(30vh - 5px);
       min-height: 250px;
    }

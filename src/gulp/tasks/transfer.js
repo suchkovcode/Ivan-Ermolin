@@ -1,3 +1,8 @@
+const admin = () => {
+   return $.gulp.src($.path.admin.src)
+      .pipe($.app.size({ title: "Размер файлов:" }))
+      .pipe($.gulp.dest($.path.admin.dev));
+};
 const img = () => {
    return $.gulp
       .src($.path.img.src)
@@ -41,6 +46,7 @@ const webp = () => {
       .pipe($.app.size({ title: "Размер после конвертации:" }))
       .pipe($.gulp.dest($.path.webp.dev));
 };
+
 const favicon = () => {
    return $.gulp.src($.path.favicon.src)
    .pipe($.app.favicons({
@@ -76,5 +82,6 @@ module.exports = {
    vendorJs: vendorJs,
    video: video,
    webp: webp,
+   admin: admin,
    favicon: favicon,
 };

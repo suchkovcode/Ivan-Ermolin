@@ -1,0 +1,133 @@
+.section-3 {
+   background-color: var(--color_bg_grey);
+   contain: layout paint;
+
+   &__grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @media all and (min-width: 992px) {
+         grid-template-columns: 1fr 2fr;
+      }
+      @media all and (min-width: 992px) {
+         grid-template-areas:
+            "tittle galary"
+            "paragraf galary";
+      }
+   }
+   &__title {
+      margin-bottom: 30px;
+      padding: 60px 30px 0px 30px;
+      font: 300 22px/1.45 "RF Dewi";
+      color: var(--color_primary);
+
+      @media all and (min-width: 576px) {
+         font: 300 24px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 992px) {
+         padding: 80px 30px 0px 30px;
+         margin-bottom: 0px;
+      }
+      @media all and (min-width: 1200px) {
+         grid-area: tittle;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 80px 80px 0px 0px;
+         font: 300 30px/1.45 "RF Dewi";
+      }
+   }
+
+   &__paragraf-box {
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+      padding: 0 30px 60px 30px;
+
+      @media all and (min-width: 992px) {
+         padding: 0px 30px 80px 30px;
+         align-self: end;
+      }
+      @media all and (min-width: 1200px) {
+         grid-area: paragraf;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 80px 80px 80px 0px;
+      }
+   }
+
+   &__paragraf {
+      max-width: 500px;
+      font: 400 14px/1.45 "RF Dewi";
+      color: var(--color_grey_4);
+      @media all and (min-width: 1366px) {
+         max-width: 550px;
+         font: 400 18px/1.45 "RF Dewi";
+      }
+   }
+
+   &__galery {
+      grid-area: galary;
+      padding: 0 30px 60px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+         "img1 img1"
+         "img2 img3"
+         "img4 img4";
+      gap: 15px;
+
+      @media all and (min-width: 576px) {
+         grid-template-columns: 2fr 1fr;
+         grid-template-areas:
+            "img1 img2"
+            "img1 img3"
+            "img4 img4";
+      }
+      @media all and (min-width: 992px) {
+         padding: 80px 30px;
+         border-left: 1px solid var(--color_grey);
+      }
+      @media all and (min-width: 1200px) {
+         gap: 30px;
+      }
+      @media all and (min-width: 1366px) {
+         padding: 80px 80px;
+      }
+   }
+   &__pic-1 {
+      grid-area: img1;
+   }
+   &__pic-2 {
+      grid-area: img2;
+   }
+   &__pic-3 {
+      grid-area: img3;
+   }
+   &__pic-4 {
+      display: block;
+      grid-area: img4;
+   }
+   &__img-1 {
+      object-fit: cover;
+      width: 100%;
+      @media all and (min-width: 576px) {
+         height: 100%;
+      }
+   }
+   &__img-2,
+   &__img-3 {
+      object-fit: cover;
+      width: 100%;
+      @media all and (min-width: 576px) {
+         height: 100%;
+      }
+   }
+   &__img-4 {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      @media all and (min-width: 576px) {
+         height: 550px;
+      }
+   }
+}

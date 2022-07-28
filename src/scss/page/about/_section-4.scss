@@ -1,0 +1,195 @@
+.section-4 {
+   padding: 60px 30px;
+   background-color: var(--color_bg_grey);
+   contain: layout paint;
+   @media all and (min-width: 768px) {
+      padding: 0px 30px;
+   }
+   @media all and (min-width: 992px) {
+      padding: 0px;
+   }
+   &__grid-container {
+      @media all and (min-width: 768px) {
+         display: grid;
+         grid-template-columns: 1fr 1fr; 
+         grid-template-areas: 
+         'title card';
+      }
+      @media all and (min-width: 992px) {
+         grid-template-columns: 1fr 2fr;
+      }
+   }
+
+   &__title {
+      max-width: 340px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font: 300 20px/1.3 "RF Dewi";
+      color: var(--color_secondary);
+      text-transform: uppercase;
+
+      @media all and (min-width: 768px) {
+         margin: 0;
+         padding-top: 60px;
+         grid-area: title;
+         font: 300 24px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 992px) {
+         padding-left: 30px;
+      }
+      @media all and (min-width: 1366px) {
+         padding-left: 0px;
+         font: 300 30px/1.45 "RF Dewi";
+      }
+   }
+   &__card-box {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      @media all and (min-width: 768px) {
+         padding: 60px 0px;
+         border-left: 1px solid var(--color_grey);
+         grid-area: card;
+      }
+      @media all and (min-width: 992px) {
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas:  
+         'card_1 card_2'
+         'card_3 card_4'
+         'card_5 card_5';
+         padding: 60px 30px;
+         max-width: 700px;
+      }
+      @media all and (min-width: 992px) {
+         max-width: 830px;
+      }
+      @media all and (min-width: 1366px) {
+         max-width: 950px;
+      }
+   }
+}
+
+.card {
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 340px;
+   height: 470px;
+   padding: 40px 30px;
+   margin: 0 auto;
+   background-color: var(--color_primary);
+
+   @media all and (min-width: 768px) {
+      max-width: 320px;
+      margin: 0;
+      justify-self: end;
+   }
+   @media all and (min-width: 992px) {
+      justify-self: stretch;
+      max-width: 335px;
+   }
+   @media all and (min-width: 1200px) {
+      max-width: 440px;
+      height: 520px;
+   }
+
+   &__header {
+      width: 100%;
+   }
+   &__title {
+      font: 300 16px/1.3 "RF Dewi";
+      color: var(--color_base);
+      margin-bottom: 30px;
+      @media all and (min-width: 1200px) {
+         font: 300 18px/1.3 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 20px/1.3 "RF Dewi";
+      }
+   }
+   &__tag-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      color: var(--color_base);
+      font: 300 14px/1.45 "RF Dewi";
+      @media all and (min-width: 1200px) {
+         font: 300 16px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         font: 300 18px/1.45 "RF Dewi";
+      }
+   }
+   &__paragraf {
+      color: var(--color_grey);
+      font: 400 14px/1.45 "RF Dewi";
+      margin-bottom: 10px;
+      @media all and (min-width: 1200px) {
+         font: 400 16px/1.45 "RF Dewi";
+      }
+
+   }
+   &__paragraf-2 {
+      margin-bottom: 0px;
+   }
+   &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 45px;
+      font: 300 13px/1.45 "RF Dewi";
+      color: var(--color_base);
+      border: 1px solid var(--color_base);
+      border-radius: 25px;
+
+      @media all and (min-width: 1200px) {
+         height: 50px;
+         font: 300 14px/1.45 "RF Dewi";
+      }
+      @media all and (min-width: 1366px) {
+         height: 55px;
+         font: 300 16px/1.45 "RF Dewi";
+      }
+   }
+   &__btn:hover {
+      background-color: var(--color_base);
+      color: var(--color_primary);
+   }
+}
+
+
+@media all and (min-width: 992px) {
+   .card-1{
+      grid-area: card_1;
+   }
+   .card-2 {
+      grid-area: card_2;
+   }
+   .card-3 {
+      grid-area: card_3;
+   }
+   .card-4 {
+      grid-area: card_4;
+   }
+   .card-5 {
+      min-width: 100%;
+      height: 320px;
+      grid-area: card_5;
+   }
+}
+
+@media all and (min-width: 475px) {
+   
+}
+@media all and (min-width: 576px) {
+   
+}
+@media all and (min-width: 768px) {
+   
+}
+@media all and (min-width: 992px) {
+   
+}

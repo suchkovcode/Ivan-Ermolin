@@ -1,0 +1,20 @@
+<dialog id="modal" class="pop-up">
+   <div class="pop-up__overlay">
+   </div>
+   <div class="pop-up__close-box">
+      <button id="close" class="pop-up__btn" type="reset">
+         <img class="pop-up__close-btn" src="/img/svg/icon_close.svg" alt="Кнопка закрыть">
+      </button>
+   </div>
+   <div class="pop-up__container">
+      <h2 class="pop-up__title">Ознакомительная консультация</h2>
+      <p class="pop-up__subtitle">Оставьте свои контакты и я свяжусь с вами, чтобы обсудить удобное время для консультации.</p>
+      <form class="pop-up__form" action="/" method="post">
+         <input class="pop-up__form-input" type="text" placeholder="Владимир" name="name" pattern="text" required>
+         <input class="pop-up__form-input" type="email" placeholder="example@gmail.com" name="email" pattern="email" required>
+         <input class="pop-up__form-input" type="tel" placeholder="+7 (999) 999-99-99" name="tel" pattern="tel" required>
+         <button class="pop-up__form-btn" type="submit">Отправить</button>
+         <a class="pop-up__form-privacy"><u>Я забочусь о вашей конфиденциальности</u></a>
+      </form>
+   </div>
+</dialog> 

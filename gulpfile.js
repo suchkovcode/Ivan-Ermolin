@@ -22,7 +22,8 @@ exports.default =
    $.task.styles,
    $.task.transfer.js,
    $.task.transfer.vendorJs,
-   $.task.transfer.vendorCSS);
+   $.task.transfer.vendorCSS,
+   $.task.transfer.admin,);
 
 
 /* Запускает сборку с запуском сервера */
@@ -38,6 +39,7 @@ exports.dev =
    $.task.transfer.js,
    $.task.transfer.vendorJs,
    $.task.transfer.vendorCSS,
+   $.task.transfer.admin,
    $.task.server);
    
 /* Запускает продвкшен сборку */
@@ -54,7 +56,28 @@ exports.pub =
    $.task.pub.transfer.js,
    $.task.pub.transfer.vendorJs,
    $.task.pub.transfer.vendorCSS,
-   $.task.pub.sitemap,
-   $.task.pub.server);
+   $.task.pub.transfer.admin,
+   $.task.pub.sitemap);
+   
+/* Запускает wordpress сборку */
+exports.wp =
+   $.gulp.series(
+      $.task.wp.clean,
+      $.task.wp.transfer.admin,
+      $.task.wp.html.page,
+      $.task.wp.html.components,
+      $.task.wp.transfer.fonts,
+      $.task.wp.transfer.img,
+      $.task.wp.transfer.video,
+      $.task.wp.transfer.webp,
+      $.task.wp.styles
+   );
 
+
+
+
+// $.task.pub.server
+   
 exports.zip = $.task.pub.zip;
+
+// Для WP стилили не должны менять название

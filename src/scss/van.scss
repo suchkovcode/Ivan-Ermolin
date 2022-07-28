@@ -1,0 +1,15 @@
+/* Базовый свойства */
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/var';
+@import 'base/global';
+/* Компоненты */
+@import 'components/header';
+@import 'components/button';
+@import 'components/form';
+@import 'components/popup';
+@import 'components/footer';
+/* Страницы */
+@import 'page/van/section-1';
+@import 'page/van/section-2';
+@import 'page/van/section-3';

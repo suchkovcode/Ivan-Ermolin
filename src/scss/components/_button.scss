@@ -1,54 +1,28 @@
-.btn-back {
-   display: flex;
-   align-items: center;
-   margin-bottom: 30px;
-   gap: 10px;
-   transition: color 0.2s linear;
-}
-.btn-back__text {
-   font: var(--font_btn_back);
-   color: var(--color_text_nav);
-}
-.btn-back:hover {
-   color: #fff;
-}
-.btn-back__text:hover {
-   color: #fff;
-}
-
-
 .btn-primary {
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   width: 120px;
+   width: 130px;
    height: 40px;
-   font: var(--font_btn);
-   color: var(--color_btn);
-   border-radius: 25px;
-   border: 1px solid var(--color_btn);
+   font: 300 14px/1.45 "RF Dewi";
+   color: var(--color_base);
+   border-radius: 50px;
+   border: 1px solid var(--color_base);
    transition: background-color 0.2s linear;
 }
 .btn-primary:hover {
-   color: var(--color_btn_hover);
-   background-color: var(--color_btn);
-}
-
-@media all and (min-width: 475px) {
-   .btn-primary {
-      width: 170px;
-      height: 50px;
-   }
+   color: var(--color_primary);
+   background-color: var(--color_base);
 }
 @media all and (min-width: 768px) {
    .btn-primary {
-      width: 140px;
-      height: 40px;
+      width: 150px;
    }
 }
 @media all and (min-width: 1366px) {
    .btn-primary {
-      width: 180px;
-      height: 55px;
+      width: 220px;
+      height: 60px;
+      font: 300 16px/1.45 "RF Dewi";
    }
 }

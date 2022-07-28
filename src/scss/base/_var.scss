@@ -1,85 +1,169 @@
 :root {
-   --color_title:            #ebebeb;    /* Текст заголовков */
-   --color_title_2:          #26282c;    /* Цвет заголовоков на сером фона */
+   --color_base:          #ebebeb;
+   --color_primary:       #26282c;
+   --color_secondary:     #4f4f4f;
+   --color_text:          #e0e0e0;
 
-   --color_subtitle:         #ebebeb;    /* Цвет подзаголовков для H1*/
-   --color_subtitle_2:       #b7b7b7;    /* Цвет подзаголовков */
-   --color_subtitle_3:       #4f4f4f;    /* Цвет пожзаголовко на сером фоне */
+   --color_bg:            #26282c;
+   --color_bg_grey:       #d1d1d1;
 
-   --color_text:             #e0e0e0;    /* Цвет дополнителнього текста */
-   --color_text_footer:      #777777;    /* Цвет подвала */
-   --color_text_nav:         #b8b8b8;    /* Цвет для текста меню */
+   --color_grey:          #b8b8b8;
+   --color_grey_2:        #777777;
+   --color_grey_3:        #626262;
+   --color_grey_4:        #505050;
+   --color_grey_5:        #373737;
+   --color_dark:          #16171a;
 
-   --color_bg:               #26282c;    /* Цвет фона */
-   --color_bg_2:             #d1d1d1;    /* Цвет серого фона*/
-   --color_placeholder:      #626262;    /* Цвет для инпутов форм */
-   --color_burger:           #b7b7b7;    /* Цвет для бургера */
-   --color_nav:              #16171a;    /* Цвет для фона наивгаци*/
-   --color_border:           #616161;    /* Цвет для границы блоков*/
-
-   --color_btn:              #ebebeb;    /* Цвет кнопки по дефолту */
-   --color_btn_hover:        #26282c;    /* Цвет кнопки при ховере */
+   --font_nav_list:         300 18px/1.45 "RF Dewi";
+   --font_btn_back:         300 16px/1.45 "RF Dewi";
+   --font_social_box:       300 13px/1.45 "RF Dewi";
 
 
-   --font_title:              300 26px/1.3 'RF Dewi';
-   --font_title-2:            300 14px/1.45 'RF Dewi';
-   --font_title-3:            300 20px/1.45 'RF Dewi';
+   /* Index page */
+   --font_index_title:      300 24px/1.3 "RF Dewi";
+   --font_index_brand_title:300 14px/1.3 "RF Dewi";
 
-   --font_subtitle:           300 13px/1.45 'RF Dewi';
+   /* About page*/
+   --font_about_title:      300 24px/1.45 "RF Dewi";
+   --font_about_subtitle:   300 14px/1.4 "RF Dewi";
 
-   --font_footer:             300 12px/1.45 'RF Dewi';
-   --font_btn:                300 14px/1.45 'RF Dewi';
-   --font_btn_back:           300 16px/1.45 'RF Dewi';
-   --font_nav_item:           300 20px/1.45 'RF Dewi';
-   --font_social-box:         300 12px/1.45 'RF Dewi';
+   /* Brand page*/
+   --font_brand_title:      300 24px/1.45 "RF Dewi";
+   --font_brand_subtitle:   300 14px/1.4 "RF Dewi";
+
+   /* Form */
+   --font_form_title: 300 20px/1.3 "RF Dewi";
+   --font_form_social: 300 14px/1.45 "RF Dewi";
 }
-
-
-
 
 @media all and (min-width: 475px) {
    :root {
-      --font_title:          300 35px/1.3 'RF Dewi';
-      --font_title-2:        300 18px/1.45 'RF Dewi';
+      --font_nav_list: 300 20px/1.45 "RF Dewi";
+      --font_btn_back: 300 18px/1.45 "RF Dewi";
+      --font_social_box: 300 13px/1.45 "RF Dewi";
 
-      --font_subtitle:       300 18px/1.45 'RF Dewi';
+      /* About */
+      --font_about_title: 300 24px/1.45 "RF Dewi";
+      --font_about_subtitle: 300 14px/1.4 "RF Dewi";
+   }
+}
 
-      --font_btn:            300 18px/1.45 'RF Dewi';
-      --font_btn_back:       300 20px/1.45 'RF Dewi';
-      --font_nav_item:       300 26px/1.45 'RF Dewi';
-      --font_social-box:     300 16px/1.45 'RF Dewi';
+@media all and (min-width: 576px) {
+   :root {
+      --font_nav_list: 300 22px/1.45 "RF Dewi";
+      --font_btn_back: 300 20px/1.45 "RF Dewi";
+      --font_social_box: 300 14px/1.45 "RF Dewi";
+
+       /* Index page */
+      --font_index_title:      300 28px/1.3 "RF Dewi";
+      --font_index_brand_title:300 16px/1.3 "RF Dewi";
+
+      /* About */
+      --font_about_title: 300 26px/1.45 "RF Dewi";
+      --font_about_subtitle: 300 14px/1.4 "RF Dewi";
+
+      /* Brand page*/
+      --font_brand_title:      300 30px/1.45 "RF Dewi";
+      --font_brand_subtitle:   300 17px/1.4 "RF Dewi";
+
+      /* Form */
+      --font_form_title: 300 22px/1.4 "RF Dewi";
+      --font_form_social: 300 14px/1.4 "RF Dewi";
    }
 }
 
 @media all and (min-width: 768px) {
    :root {
-      --font_title:          300 26px/1.3 'RF Dewi';
-      --font_title-2:        300 14px/1.45 'RF Dewi';
-      --font_title-3:        300 22px/1.45 'RF Dewi';
-      --font_btn:            300 14px/1.45 'RF Dewi';
-      --font_footer:         300 14px/1.45 'RF Dewi';
+      --font_nav_list: 300 24px/1.45 "RF Dewi";
+      --font_btn_back: 300 22px/1.45 "RF Dewi";
+      --font_social_box: 300 16px/1.45 "RF Dewi";
+
+      /* Index page */
+      --font_index_title:      300 28px/1.3 "RF Dewi";
+      --font_index_brand_title:300 16px/1.3 "RF Dewi";
+       
+      /* About */
+      --font_about_title: 300 28px/1.45 "RF Dewi";
+      --font_about_subtitle: 300 16px/1.4 "RF Dewi";
+
+       /* Brand page*/
+       --font_brand_title:      300 32px/1.45 "RF Dewi";
+       --font_brand_subtitle:   300 18px/1.4 "RF Dewi";
+
+      /* Form */
+      --font_form_title: 300 24px/1.4 "RF Dewi";
+      --font_form_social: 300 16px/1.4 "RF Dewi";
    }
 }
+
 @media all and (min-width: 992px) {
    :root {
-      --font_footer:         300 16px/1.45 'RF Dewi';
+      --font_nav_list: 300 24px/1.45 "RF Dewi";
+      --font_btn_back: 300 22px/1.45 "RF Dewi";
+      --font_social_box: 300 16px/1.45 "RF Dewi";
+
+      /* Index page */
+      --font_index_title:      300 30px/1.3 "RF Dewi";
+      --font_index_brand_title:300 16px/1.3 "RF Dewi";
+
+      /* About */
+      --font_about_title: 300 34px/1.45 "RF Dewi";
+      --font_about_subtitle: 300 18px/1.4 "RF Dewi";
+
+       /* Brand page*/
+       --font_brand_title:      300 36px/1.45 "RF Dewi";
+       --font_brand_subtitle:   300 20px/1.4 "RF Dewi";
+
+      /* Form */
+      --font_form_title: 300 24px/1.4 "RF Dewi";
+      --font_form_social: 300 16px/1.4 "RF Dewi";
    }
 }
+
 @media all and (min-width: 1200px) {
    :root {
-      --font_title:          300 36px/1.3 'RF Dewi';
-      --font_title-3:        300 32px/1.45 'RF Dewi';
-      --font_footer:         300 18px/1.45 'RF Dewi';
+      --font_nav_list: 300 26px/1.45 "RF Dewi";
+      --font_btn_back: 300 22px/1.45 "RF Dewi";
+      --font_social_box: 300 16px/1.45 "RF Dewi";
+
+      /* Index page */
+      --font_index_title:      300 34px/1.3 "RF Dewi";
+      --font_index_brand_title:300 16px/1.3 "RF Dewi";
+
+      /* About */
+      --font_about_title: 300 38px/1.45 "RF Dewi";
+      --font_about_subtitle: 300 20px/1.4 "RF Dewi";
+
+      /* Brand page*/
+      --font_brand_title:      300 42px/1.45 "RF Dewi";
+      --font_brand_subtitle:   300 22px/1.4 "RF Dewi";
+
+       /* Form */
+       --font_form_title: 300 26px/1.4 "RF Dewi";
+       --font_form_social: 300 18px/1.4 "RF Dewi";
    }
 }
+
 @media all and (min-width: 1366px) {
    :root {
-      --font_title:          300 50px/1.3 'RF Dewi';
-      --font_title-2:        300 20px/1.45 'RF Dewi';
-      --font_btn:            300 16px/1.45 'RF Dewi';
-      --font_btn_back:       300 22px/1.45 'RF Dewi';
-      --font_nav_item:       300 28px/1.45 'RF Dewi';
-      --font_social-box:     300 18px/1.45 'RF Dewi';
-      --font_footer:         300 22px/1.45 'RF Dewi';
+      --font_nav_list: 300 36px/1.45 "RF Dewi";
+      --font_btn_back: 300 26px/1.45 "RF Dewi";
+      --font_social_box: 300 18px/1.45 "RF Dewi";
+
+      /* Index page */
+      --font_index_title:      300 52px/1.3 "RF Dewi";
+      --font_index_brand_title:300 18px/1.3 "RF Dewi";
+
+      /* About */
+      --font_about_title: 300 55px/1.45 "RF Dewi";
+      --font_about_subtitle: 300 26px/1.4 "RF Dewi";
+
+      /* Brand page*/
+      --font_brand_title:      300 48px/1.45 "RF Dewi";
+      --font_brand_subtitle:   300 22px/1.4 "RF Dewi";
+
+       /* Form */
+       --font_form_title: 300 28px/1.4 "RF Dewi";
+       --font_form_social: 300 20px/1.4 "RF Dewi";
    }
 }

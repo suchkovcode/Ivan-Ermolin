@@ -16,8 +16,8 @@
 }
 .footer__text {
    display: inline-block;
-   font: var(--font_footer);
-   color: var( --color_text_footer);
+   font: 300 14px/1.45 "RF Dewi";
+   color: var(--color_grey_2);
    transition: color 0.2s linear;
 }
 .footer__text:hover {
@@ -29,31 +29,35 @@
       flex-flow: row;
       align-items: flex-end;
       justify-content: space-between;
-      max-width: 1366px;
-   }
-   .footer__text--margin {
-      transform: translateX(13%);
+      max-width: 1306px;
    }
 }
-
 @media all and (min-width: 768px) {
-   
+   .footer__text {
+      font: 300 16px/1.45 "RF Dewi";
+   }
 }
 @media all and (min-width: 992px) {
    .footer {
       padding: 60px 30px 30px 30px;
-      contain: layout paint;
+   }
+   .footer__text--margin {
+      transform: translateX(8%);
    }
 }
 @media all and (min-width: 1200px) {
    .footer {
       padding: 90px 30px 30px 30px;
-      contain: layout paint;
+   }
+   .footer__text {
+      font: 300 18px/1.45 "RF Dewi";
    }
 }
 @media all and (min-width: 1366px) {
    .footer {
       padding: 120px 30px 30px 30px;
-      contain: layout paint;
+   }
+   .footer__text {
+      font: 300 20px/1.45 "RF Dewi";
    }
 }
