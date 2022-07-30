@@ -28,3 +28,32 @@
       anchorPlacement: "top-top", // defines which position of the element regarding to window should trigger the animation
    });
 </script>
+<script>
+   SmoothScroll({
+       // Время скролла 400 = 0.4 секунды
+       animationTime    : 800,
+       // Размер шага в пикселях 
+       stepSize         : 75,
+   
+       // Дополнительные настройки:
+       
+       // Ускорение 
+       accelerationDelta : 30,  
+       // Максимальное ускорение
+       accelerationMax   : 2,   
+   
+       // Поддержка клавиатуры
+       keyboardSupport   : true,  
+       // Шаг скролла стрелками на клавиатуре в пикселях
+       arrowScroll       : 75,
+   
+       // Pulse (less tweakable)
+       // ratio of "tail" to "acceleration"
+       pulseAlgorithm   : true,
+       pulseScale       : 4,
+       pulseNormalize   : 1,
+   
+       // Поддержка тачпада
+       touchpadSupport   : true,
+   })
+   </script>
