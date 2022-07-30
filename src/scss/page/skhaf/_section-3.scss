@@ -66,9 +66,8 @@
    }
 
    &__galery {
-      grid-area: galary;
-      padding: 0 30px 60px 30px;
       display: grid;
+      padding: 0 30px 60px 30px;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
          "img1 img1"
@@ -84,6 +83,7 @@
             "img4 img4";
       }
       @media all and (min-width: 992px) {
+         grid-area: galary;
          padding: 80px 30px;
          border-left: 1px solid var(--color_grey);
       }
