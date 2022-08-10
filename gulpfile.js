@@ -71,12 +71,6 @@ exports.wp =
       $.task.wp.transfer.video,
       $.task.wp.transfer.webp,
       $.task.wp.styles);
-
-
-
-
-// $.task.pub.server
    
 exports.zip = $.task.pub.zip;
 
-// Для WP стилили не должны менять название
