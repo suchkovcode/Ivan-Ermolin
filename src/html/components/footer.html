@@ -2,58 +2,42 @@
    <div class="overlay"></div>
    <div class="footer__text-box">
       <p class="footer__text" data-aos="zoom-in" data-aos-offset="50">© 2022</p>
-      <a class="footer__text footer__text--margin" href="/privacy.html" data-aos="zoom-in" data-aos-offset="50">Политика конфиденциальности</a>
-      <a class="footer__text" href="" data-aos="zoom-in" data-aos-offset="10">Разработка сайта</a>
+      <a class="footer__text footer__text--margin" href="/privacy.html" data-aos="zoom-in" data-aos-offset="0">Privacy Policy</a>
+      <a class="footer__text" href="https://github.com/suchkovcode" data-aos="zoom-in" data-aos-offset="0">Development Site</a>
    </div>
 </footer>
 <script src="/js/script.js"></script>
 <script src="/js/vendor.js"></script>
 <script>
    AOS.init({
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: "aos-init", // class applied after initialization
-      animatedClassName: "aos-animate", // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-      offset: 60, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 1100, // values from 0 to 3000, with step 50ms
-      easing: "ease", // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: "top-top", // defines which position of the element regarding to window should trigger the animation
+      disable: false, 
+      startEvent: "DOMContentLoaded", 
+      initClassName: "aos-init", 
+      animatedClassName: "aos-animate",
+      useClassNames: false, 
+      disableMutationObserver: false, 
+      debounceDelay: 50, 
+      throttleDelay: 99,
+      offset: 60,
+      delay: 0, 
+      duration: 1100, 
+      easing: "ease", 
+      once: false, 
+      mirror: false, 
+      anchorPlacement: "top-top", 
    });
 </script>
 <script>
    SmoothScroll({
-       // Время скролла 400 = 0.4 секунды
        animationTime    : 800,
-       // Размер шага в пикселях 
        stepSize         : 75,
-   
-       // Дополнительные настройки:
-       
-       // Ускорение 
        accelerationDelta : 30,  
-       // Максимальное ускорение
        accelerationMax   : 2,   
-   
-       // Поддержка клавиатуры
        keyboardSupport   : true,  
-       // Шаг скролла стрелками на клавиатуре в пикселях
        arrowScroll       : 75,
-   
-       // Pulse (less tweakable)
-       // ratio of "tail" to "acceleration"
        pulseAlgorithm   : true,
        pulseScale       : 4,
        pulseNormalize   : 1,
-   
-       // Поддержка тачпада
        touchpadSupport   : true,
    })
    </script>
