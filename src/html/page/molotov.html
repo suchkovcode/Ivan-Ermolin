@@ -21,7 +21,7 @@
 
       <!-- Подключенные стили -->
       <link rel="stylesheet" href="/css/molotov.min.css" type="text/css" />
-      <link rel="stylesheet" href="/css/vendor.min.css" type="text/css" />
+      <!-- <link rel="stylesheet" href="/css/vendor.min.css" type="text/css" /> -->
 
       <!-- Подключаем фавиконы  -->
       <link rel="icon" href="img/png/favicon-36x36.png" type="image/png" sizes="36x36" />
@@ -45,7 +45,7 @@
       <meta property="og:country-name" content="RU" />
    </head>
    <body class="page">
-      <!--=include ../components/header.html -->
+      @include("html/components/header.html")
       <main class="main">
          <div class="overlay"></div>
          <section class="section-1">
@@ -102,10 +102,10 @@
          </section>
          <section class="section-4">
             <div class="container">
-               <!--=include ../components/cta.html -->
+               @include("html/components/cta.html")
             </div>
          </section>
       </main>
-      <!--=include ../components/footer.html -->
+      @include("html/components/footer.html")
    </body>
 </html>
