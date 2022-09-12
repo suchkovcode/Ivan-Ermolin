@@ -70,7 +70,12 @@ class BigCircle {
       this.circle.style.transform = `translate3d(${this.pointerX}px, ${this.pointerY}px, 0)`;
       this.dot.style.transform = `translate3d(calc(-50% + ${this.pointerX}px), calc(-50% + ${this.pointerY}px), 0)`;
 
-      if (event.target.localName === "button" || event.target.localName === "a" || event.target.onclick !== null || event.target.className.includes("curzr-hover")) {
+      if (
+         event.target.localName === "button" ||
+         event.target.localName === "a" ||
+         event.target.onclick !== null ||
+         event.target.className.includes("curzr-hover")
+      ) {
          this.hover();
       }
    }

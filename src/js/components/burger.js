@@ -1,8 +1,7 @@
-'use strict';
+"use strict";
 const burger = document.querySelector(".header__burger-box");
 const burgerIcon = document.querySelectorAll(".header__burger-icon");
 const nav = document.querySelector(".nav");
-
 
 burger.addEventListener("click", function () {
    burgerIcon.forEach((item, i) => {
@@ -46,9 +45,9 @@ burger.addEventListener("click", function () {
    });
 
    /* Выдвигаем боковое меню добавляя и удаляя клас элементу */
-   if (nav.classList == 'nav') {
-      nav.classList.add('nav--open') 
+   if (nav.classList == "nav") {
+      nav.classList.add("nav--open");
    } else {
-      nav.classList.remove('nav--open')
+      nav.classList.remove("nav--open");
    }
 });
