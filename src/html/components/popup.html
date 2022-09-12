@@ -1,20 +1,39 @@
 <dialog id="modal" class="pop-up">
-   <div class="pop-up__overlay">
-   </div>
+   <div class="pop-up__overlay"></div>
    <div class="pop-up__close-box">
       <button id="close" class="pop-up__close-btn" type="reset">
-         <img class="pop-up__btn-img" src="/img/svg/icon_close.svg" alt="Кнопка закрыть">
+         <img class="pop-up__btn-img" src="/img/svg/icon_close.svg" alt="Кнопка закрыть" />
       </button>
    </div>
    <div class="pop-up__container">
       <h2 class="pop-up__title">An introductory consultation</h2>
-      <p class="pop-up__subtitle">Leave your contacts and I will contact you to discuss the convenient time for consultation.</p>
+      <p class="pop-up__subtitle">
+         Leave your contacts and I will contact you to discuss the convenient time for consultation.
+      </p>
       <form class="pop-up__form" action="/" method="post">
-         <input class="pop-up__form-input" type="text" placeholder="David" name="name" pattern="text" required>
-         <input class="pop-up__form-input" type="email" placeholder="example@gmail.com" name="email" pattern="email" required>
-         <input class="pop-up__form-input" type="tel" placeholder="+1 (999) 999-99-99" name="tel" pattern="tel" required>
+         <input
+            class="pop-up__form-input"
+            type="text"
+            placeholder="David"
+            name="name"
+            pattern="text"
+            required="required" />
+         <input
+            class="pop-up__form-input"
+            type="email"
+            placeholder="example@gmail.com"
+            name="email"
+            pattern="email"
+            required="required" />
+         <input
+            class="pop-up__form-input"
+            type="tel"
+            placeholder="+1 (999) 999-99-99"
+            name="tel"
+            pattern="tel"
+            required="required" />
          <button class="pop-up__form-btn" type="submit">Send</button>
          <a class="pop-up__form-privacy" href="/privacy.html"><u>I care about your confidentiality</u></a>
       </form>
    </div>
-</dialog> 
+</dialog>
