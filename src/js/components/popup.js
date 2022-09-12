@@ -7,34 +7,34 @@ if (window.location.pathname == "/about.html") {
    const omlineBtn = document.querySelector(".section-5__btn");
 
    omlineBtn.addEventListener("click", () => {
-      title.innerText = "Как создать свой бизнес с нуля";
+      title.innerText = "How to create your own business from scratch";
       subTitle.innerText =
-         "Онлайн обучение по запуску своего бренда с нуля. Оставьте свои контакты и я свяжусь с вами, чтобы обсудить детали и ответить на вопросы.";
+         "Online training to launch your brand from scratch.Leave your contacts and I will contact you to discuss the details and answer questions.";
       modal.showModal();
    });
 
    openBtn.forEach((item, index) => {
       item.addEventListener("click", () => {
          if (index == 0) {
-            title.innerText = "Ознакомительная консультация";
+            title.innerText = "An introductory consultation";
             subTitle.innerText =
-               "Оставьте свои контакты и я свяжусь с вами, чтобы обсудить удобное время для консультации.";
+               "Leave your contacts and I will contact you to discuss the convenient time for consultation.n.";
          } else if (index == 1) {
-            title.innerText = "Разовая консультация";
+            title.innerText = "One -time consultationon";
             subTitle.innerText =
-               "Оставьте свои контакты и я свяжусь с вами, чтобы обсудить удобное время для консультации.";
+               "Leave your contacts and I will contact you to discuss the convenient time for consultation.n.";
          } else if (index == 2) {
-            title.innerText = "Групповое наставничество";
+            title.innerText = "Group mentoring";
             subTitle.innerText =
-               "Оставьте свои контакты и я свяжусь с вами, чтобы обсудить детали и ответить на вопросы.";
+               "Leave your contacts and I will contact you to discuss the details and answer questions.";
          } else if (index == 3) {
-            title.innerText = "Личное наставничество";
+            title.innerText = "Personal mentoring";
             subTitle.innerText =
-               "Оставьте свои контакты и я свяжусь с вами, чтобы обсудить детали и ответить на вопросы.";
+               "Leave your contacts and I will contact you to discuss the details and answer questions.";
          } else if (index == 4) {
-            title.innerText = "Продвижение бренда.";
+            title.innerText = "Brand promotion.";
             subTitle.innerText =
-               "Хотите быстро и с минимальными потерями масштабировать бизнес? Я знаю как.Оставьте свои контакты и я свяжусь с вами, чтобы обсудить детали и ответить на вопросы.";
+               "Want to scald business quickly and with minimal losses?I know how. ONLY OF THE CONTACTS AND I will contact you to discuss the details and answer questions.";
          }
          modal.showModal();
       });
