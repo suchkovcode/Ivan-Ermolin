@@ -1,11 +1,13 @@
 .section-1 {
    padding: 80px 30px;
 }
+
 .section-1__title {
    display: inline-block;
    margin-bottom: 30px;
    font: var(--font_about_title);
 }
+
 .section-1__subtitle {
    max-width: 540px;
    margin-bottom: 50px;
@@ -13,11 +15,11 @@
    color: var(--color_base);
 }
 
-
 @media all and (min-width: 768px) {
    .section-1 {
       padding: 100px 30px;
    }
+
    .section-1__subtitle {
       max-width: 640px;
    }
@@ -30,23 +32,27 @@
 }
 @media all and (min-width: 1200px) {
    .section-1 {
-      padding: 100px 0px;
+      padding: 100px 0;
    }
+
    .container {
       max-width: 1140px;
       margin: 0 auto;
-   }   
+   }
+
    .section-1__subtitle {
       max-width: 740px;
    }
 }
 @media all and (min-width: 1366px) {
    .section-1 {
-      padding: 150px 0px;
+      padding: 150px 0;
    }
+
    .container {
       max-width: 1306px;
-   }   
+   }
+
    .section-1__subtitle {
       max-width: 1000px;
    }

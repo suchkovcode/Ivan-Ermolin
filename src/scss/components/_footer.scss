@@ -1,25 +1,29 @@
 .footer {
-   padding: 30px;
    contain: layout paint;
+   padding: 30px;
 }
+
 .footer__text-box {
    display: flex;
    flex-flow: column;
-   gap: 10px;
    max-width: 360px;
    margin: 0 auto;
+   gap: 10px;
 }
+
 .footer__box-1 {
    display: flex;
    flex-flow: column;
    gap: 10px;
 }
+
 .footer__text {
    display: inline-block;
    font: 300 14px/1.45 "RF Dewi";
    color: var(--color_grey_2);
    transition: color 0.2s linear;
 }
+
 .footer__text:hover {
    color: #fff;
 }
@@ -39,24 +43,27 @@
 }
 @media all and (min-width: 992px) {
    .footer {
-      padding: 60px 30px 30px 30px;
+      padding: 60px 30px 30px;
    }
+
    .footer__text--margin {
       transform: translateX(8%);
    }
 }
 @media all and (min-width: 1200px) {
    .footer {
-      padding: 90px 30px 30px 30px;
+      padding: 90px 30px 30px;
    }
+
    .footer__text {
       font: 300 18px/1.45 "RF Dewi";
    }
 }
 @media all and (min-width: 1366px) {
    .footer {
-      padding: 120px 30px 30px 30px;
+      padding: 120px 30px 30px;
    }
+
    .footer__text {
       font: 300 20px/1.45 "RF Dewi";
    }

@@ -2,27 +2,31 @@
    background-color: var(--color_bg);
    scrollbar-width: none;
 }
+
 .main {
    contain: layout paint;
 }
+
 .overlay {
    position: absolute;
-   z-index: -1;
-   top: 0;
    left: 0;
+   top: 0;
+   z-index: -1;
    width: 100%;
    height: 100%;
-   background: url(../img/gif/noise.gif) repeat;
-   background-position:center;
-   opacity: 2%;
+   opacity: 0.02;
+   background: url("../img/gif/noise.gif") repeat;
+   background-position: center;
 }
+
 .gardient {
-   color: transparent;
-   background: linear-gradient(to right, #ffffff 0%, #61a9d1 100%);
-   background-repeat: no-repeat;
-   background-clip: text; 
    text-transform: uppercase;
-} 
+   color: transparent;
+   background: linear-gradient(to right, #fff 0%, #61a9d1 100%);
+   background-repeat: no-repeat;
+   background-clip: text;
+}
+
 ::-webkit-scrollbar {
    width: 0;
    height: 0;

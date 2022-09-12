@@ -1,16 +1,18 @@
 /* Базовый свойства */
-@import 'base/reset';
-@import 'base/fonts';
-@import 'base/var';
-@import 'base/global';
+@import "base/reset";
+@import "base/fonts";
+@import "base/var";
+@import "base/global";
+
 /* Компоненты */
-@import 'components/header';
-@import 'components/button';
-@import 'components/form';
-@import 'components/cta';
-@import 'components/popup';
-@import 'components/footer';
+@import "components/header";
+@import "components/button";
+@import "components/form";
+@import "components/cta";
+@import "components/popup";
+@import "components/footer";
+
 /* Страницы */
-@import 'page/skhaf/section-1';
-@import 'page/skhaf/section-2';
-@import 'page/skhaf/section-3';
+@import "page/skhaf/section-1";
+@import "page/skhaf/section-2";
+@import "page/skhaf/section-3";

@@ -1,15 +1,6 @@
 .section-4 {
    padding: 60px 30px;
    border-bottom: 1px solid var(--color_grey_3);
-   @media all and (min-width: 768px) {
-      padding: 80px 30px;
-   }
-   @media all and (min-width: 1200px) {
-      padding: 100px 30px;
-   }
-   @media all and (min-width: 1366px) {
-      padding: 120px 30px;
-   }
 
    &__title {
       max-width: 400px;
@@ -35,7 +26,17 @@
          font: 300 24px/1.45 "RF Dewi";
       }
    }
+   @media all and (min-width: 768px) {
+      padding: 80px 30px;
+   }
+   @media all and (min-width: 1200px) {
+      padding: 100px 30px;
+   }
+   @media all and (min-width: 1366px) {
+      padding: 120px 30px;
+   }
 }
+
 mark {
-   color: rgb(97, 169, 209);;
+   color: rgb(97 169 209);
 }

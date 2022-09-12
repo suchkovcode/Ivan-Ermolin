@@ -1,16 +1,17 @@
 /* Свойства для бургера */
 .header__burger-box {
    position: fixed;
+   right: 25px;
+   top: 25px;
+   z-index: 15;
    display: flex;
    flex-flow: row wrap;
    justify-content: space-between;
-   gap: 1px;
-   top: 25px;
-   right: 25px;
    width: 25px;
    height: 25px;
-   z-index: 15;
+   gap: 1px;
 }
+
 .header__burger-icon {
    width: 12px;
    height: 12px;
@@ -18,79 +19,82 @@
    border-radius: 50%;
    transition: background-color, 0.2s linear;
 }
+
 .header__burger-icon--open {
    background-color: var(--color_grey);
 }
 
-
-
 /* Свойства для выпадающего меню */
 .nav {
-   position: fixed;
    visibility: hidden;
-   top: 0;
+   position: fixed;
    right: -100%;
-   z-index: 10; 
+   top: 0;
+   z-index: 10;
    width: 90%;
    height: 100%;
-   padding: 65px 30px 30px 30px;
+   padding: 65px 30px 30px;
    background-color: var(--color_dark);
    transition: right 0.4s linear, visibility 0.4s linear;
 }
+
 .nav--open {
    visibility: visible;
    right: 0;
 }
+
 .nav__list {
    display: flex;
    flex-flow: column;
-   gap: 10px;
    margin-bottom: 140px;
+   gap: 10px;
 }
+
 .nav__list-item {
    font: var(--font_nav_list);
    color: var(--color_grey);
    transition: color 0.2s linear;
 }
+
 .nav__list-item:hover {
    color: #fff;
 }
-
 
 /* Кнопка назад */
 .btn-back {
    display: flex;
    align-items: center;
    margin-bottom: 30px;
-   gap: 10px;
    transition: color 0.2s linear;
+   gap: 10px;
 }
+
 .btn-back__text {
    font: var(--font_btn_back);
    color: var(--color_grey);
 }
+
 .btn-back:hover,
 .btn-back__text:hover {
    color: #fff;
 }
 
-
 /* Социальный бокс */
 .social-box {
    display: flex;
-   gap: 30px;
    margin-top: 50px;
+   gap: 30px;
 }
+
 .social-box__item {
    font: var(--font_social_box);
    color: var(--color_grey);
    transition: color 0.2s linear;
 }
+
 .social-box__item:hover {
    color: #fff;
 }
-
-
 
 @media all and (min-width: 475px) {
    .nav {
@@ -113,9 +117,10 @@
 
 @media all and (min-width: 992px) {
    .header__burger-box {
-      top: 40px;
       right: 57px;
+      top: 40px;
    }
+
    .nav {
       width: 50%;
    }

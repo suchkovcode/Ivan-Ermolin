@@ -6,10 +6,11 @@
    height: 40px;
    font: 300 14px/1.45 "RF Dewi";
    color: var(--color_base);
-   border-radius: 50px;
    border: 1px solid var(--color_base);
+   border-radius: 50px;
    transition: background-color 0.2s linear;
 }
+
 .btn-primary:hover {
    color: var(--color_primary);
    background-color: var(--color_base);

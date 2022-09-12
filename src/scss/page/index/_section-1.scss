@@ -3,19 +3,18 @@
    grid-template-columns: 1fr;
 }
 
-
 /* About block */
 .about {
    min-height: 220px;
    padding: 90px 25px;
    border-bottom: 1px solid var(--color_grey_3);
 }
+
 .about__title {
+   margin-bottom: 40px;
    font: var(--font_index_title);
    color: var(--color_base);
-   margin-bottom: 40px;
 }
-
 
 /* Section brand block */
 .brand {
@@ -26,12 +25,14 @@
    padding: 30px;
    border-bottom: 1px solid var(--color_grey_3);
 }
+
 .brand__title-box {
    display: flex;
-   justify-content: space-between;
    align-items: center;
+   justify-content: space-between;
    gap: 10px;
 }
+
 .brand__title {
    font: var(--font_index_brand_title);
    color: var(--color_base);
@@ -41,9 +42,11 @@
    .about {
       min-height: 300px;
    }
+
    .brand {
       min-height: 300px;
    }
+
    .brand__img {
       width: 160px;
       height: auto;
@@ -53,6 +56,7 @@
    .section-1 {
       grid-template-columns: 1fr 1fr;
    }
+
    .about {
       display: flex;
       flex-flow: column;
@@ -60,53 +64,62 @@
       padding: 30px;
       border-right: 1px solid var(--color_grey_3);
    }
+
    .brand {
       height: 340px;
    }
+
    .custom,
    .mentor {
       border-right: 1px solid var(--color_grey_3);
    }
 }
 @media all and (min-width: 992px) {
-   .brand, 
+   .brand,
    .about {
       padding: 40px;
    }
 }
 @media all and (min-width: 1200px) {
    .section-1 {
+      grid-template-areas:
+         "about molotov custom"
+         "about mentor van"
+         "shkaf mentor van";
       grid-template-columns: 1.7fr 1fr 1fr;
-      grid-template-areas: 'about molotov custom'
-                           'about mentor van'
-                           'shkaf mentor van';
    }
+
    .brand__img {
       width: 130px;
    }
 
    .about {
-      padding: 100px 40px 100px 120px;
       grid-area: about;
+      padding: 100px 40px 100px 120px;
    }
+
    .molotov {
       grid-area: molotov;
       border-right: 1px solid var(--color_grey_3);
    }
+
    .custom {
       grid-area: custom;
-      border-right: 0px solid var(--color_grey_3);
+      border-right: 0 solid var(--color_grey_3);
    }
+
    .shkaf {
-      padding: 40px 40px 40px 120px;
+      grid-area: shkaf;
       height: 200px;
       min-height: 200px;
-      grid-area: shkaf;
+      padding: 40px 40px 40px 120px;
       border-right: 1px solid var(--color_grey_3);
    }
+
    .mentor {
       grid-area: mentor;
    }
+
    .van {
       grid-area: van;
    }
@@ -115,29 +128,33 @@
 @media all and (min-width: 1366px) {
    .section-1 {
       grid-template-columns: 1.8fr 1fr 1fr;
-     
    }
+
    .brand {
-      padding: 60px;
       min-height: 430px;
+      padding: 60px;
    }
+
    .brand__img {
       width: 180px;
    }
+
    .about {
-      padding: 100px 40px 100px 180px;
       height: calc(70vh - 5px);
       min-height: 610px;
+      padding: 100px 40px 100px 180px;
    }
+
    .shkaf {
-      padding: 60px 60px 60px 180px;
       height: calc(30vh - 5px);
       min-height: 250px;
+      padding: 60px 60px 60px 180px;
    }
+
    .molotov,
    .custom,
    .mentor,
-   .van   {
+   .van {
       height: calc(50vh - 5px);
    }
 }

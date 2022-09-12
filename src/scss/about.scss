@@ -1,17 +1,19 @@
 /* Базовый свойства */
-@import 'base/reset';
-@import 'base/fonts';
-@import 'base/var';
-@import 'base/global';
+@import "base/reset";
+@import "base/fonts";
+@import "base/var";
+@import "base/global";
+
 /* Компоненты */
-@import 'components/header';
-@import 'components/button';
-@import 'components/form';
-@import 'components/popup';
-@import 'components/footer';
+@import "components/header";
+@import "components/button";
+@import "components/form";
+@import "components/popup";
+@import "components/footer";
+
 /* Страницы */
-@import 'page/about/section-1';
-@import 'page/about/section-2';
-@import 'page/about/section-3';
-@import 'page/about/section-4';
-@import 'page/about/section-5';
+@import "page/about/section-1";
+@import "page/about/section-2";
+@import "page/about/section-3";
+@import "page/about/section-4";
+@import "page/about/section-5";

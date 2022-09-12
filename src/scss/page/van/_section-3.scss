@@ -7,29 +7,29 @@
          grid-area: form;
          padding-top: 60px;
          padding-bottom: 60px;
+         border-bottom: 0 solid var(--color_grey_3);
          border-left: 1px solid var(--color_grey_3);
-         border-bottom: 0px solid var(--color_grey_3);
       }
       @media all and (min-width: 1200px) {
          padding-top: 80px;
          padding-bottom: 80px;
       }
    }
+
    &__grid-container {
       @media all and (min-width: 992px) {
          display: grid;
+         grid-template-areas:
+            "title form"
+            "separator separator";
          grid-template-columns: 1fr 2fr;
-         grid-template-areas: 
-         'title form'
-         'separator separator';
       }
       @media all and (min-width: 1200px) {
-         grid-template-areas: 
-         'title form'
-         'separator separator';
+         grid-template-areas:
+            "title form"
+            "separator separator";
       }
    }
-
 }
 
 .form__title {
@@ -40,14 +40,14 @@
    text-align: start;
 
    @media all and (min-width: 992px) {
-      padding-top: 60px;
       grid-area: title;
       margin-bottom: 0;
+      padding-top: 60px;
    }
    @media all and (min-width: 1200px) {
-      padding: 0;
-      padding-top: 80px;
       grid-area: title;
       margin-bottom: 0;
+      padding: 0;
+      padding-top: 80px;
    }
 }

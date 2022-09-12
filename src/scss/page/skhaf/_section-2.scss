@@ -1,6 +1,6 @@
 .section-2 {
    contain: layout paint;
-   
+
    &__grid-container {
       display: grid;
       grid-template-columns: 1fr;
@@ -12,14 +12,14 @@
          grid-template-columns: 1fr 2fr;
       }
       @media all and (min-width: 992px) {
-         grid-template-areas:
-            "tittle paragraf";
-         border-bottom: 0px solid var(--color_grey_3);
+         grid-template-areas: "tittle paragraf";
+         border-bottom: 0 solid var(--color_grey_3);
       }
    }
+
    &__title {
       margin-bottom: 30px;
-      padding: 60px 30px 0px 30px;
+      padding: 60px 30px 0;
       font: 300 22px/1.45 "RF Dewi";
       color: var(--color_base);
 
@@ -27,15 +27,15 @@
          font: 300 24px/1.45 "RF Dewi";
       }
       @media all and (min-width: 768px) {
+         margin-bottom: 0;
          padding: 80px 30px;
-         margin-bottom: 0px;
          border-right: 1px solid var(--color_grey_3);
       }
       @media all and (min-width: 1200px) {
          grid-area: tittle;
       }
       @media all and (min-width: 1366px) {
-         padding: 200px 80px 200px 0px;
+         padding: 200px 80px 200px 0;
          font: 300 30px/1.45 "RF Dewi";
       }
    }
@@ -43,8 +43,8 @@
    &__paragraf-box {
       display: flex;
       flex-flow: column;
+      padding: 0 30px 60px;
       gap: 10px;
-      padding: 0 30px 60px 30px;
       @media all and (min-width: 768px) {
          padding: 80px 30px;
       }

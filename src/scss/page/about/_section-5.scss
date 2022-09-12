@@ -1,50 +1,50 @@
 .section-5 {
+   contain: layout paint;
    padding: 60px 30px;
    border-bottom: 1px solid var(--color_grey_3);
-   contain: layout paint;
-   @media all and (min-width: 768px) {
-      padding: 0;
-   }
+
    &__grid-container {
       @media all and (min-width: 768px) {
          display: grid;
-         grid-template-columns: 1fr 1fr;
          grid-template-areas: "title content";
+         grid-template-columns: 1fr 1fr;
       }
       @media all and (min-width: 992px) {
          display: grid;
-         grid-template-columns: 1fr 2fr;
          grid-template-areas: "title content";
+         grid-template-columns: 1fr 2fr;
       }
    }
+
    &__title {
       margin-bottom: 30px;
       font: 300 20px/1.45 "RF Dewi";
       color: var(--color_base);
       @media all and (min-width: 768px) {
-         padding: 60px 30px;
          grid-area: title;
+         padding: 60px 30px;
       }
       @media all and (min-width: 1200px) {
          font: 300 22px/1.45 "RF Dewi";
       }
       @media all and (min-width: 1366px) {
-         padding: 80px 80px;
-         padding-left: 0px;
+         padding: 80px;
+         padding-left: 0;
          font: 300 24px/1.45 "RF Dewi";
       }
    }
 
    &__content-box {
       @media all and (min-width: 768px) {
+         grid-area: content;
          padding: 60px 30px;
          border-left: 1px solid var(--color_grey_3);
-         grid-area: content;
       }
       @media all and (min-width: 1366px) {
-         padding: 80px 80px;
+         padding: 80px;
       }
    }
+
    &__title-2 {
       max-width: 250px;
       margin-bottom: 30px;
@@ -57,10 +57,11 @@
          font: 300 20px/1.45 "RF Dewi";
       }
    }
+
    &__paragraf {
       max-width: 400px;
-      font: 400 14px/1.45 "RF Dewi";
       margin-bottom: 30px;
+      font: 400 14px/1.45 "RF Dewi";
       color: var(--color_base);
       @media all and (min-width: 992px) {
          max-width: 500px;
@@ -73,10 +74,11 @@
          font: 400 18px/1.45 "RF Dewi";
       }
    }
+
    &__btn {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       width: 220px;
       height: 45px;
       font: 300 13px/1.45 "RF Dewi";
@@ -95,8 +97,12 @@
          font: 300 16px/1.45 "RF Dewi";
       }
    }
+
    &__btn:hover {
-      background-color: var(--color_base);
       color: var(--color_primary);
+      background-color: var(--color_base);
+   }
+   @media all and (min-width: 768px) {
+      padding: 0;
    }
 }
