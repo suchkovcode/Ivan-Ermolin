@@ -21,7 +21,7 @@
       "no-plusplus": "off",
       "no-var": "error",
       "eol-last": "off",
-      "arrow-body-style": ["error", "as-needed"],
+      "arrow-body-style": ["error", "always"],
       "prefer-arrow-callback": "off",
       "comma-dangle": "off",
       "no-param-reassign": "off",

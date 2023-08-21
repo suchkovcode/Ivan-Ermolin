@@ -14,6 +14,7 @@
 
       "media-feature-name-no-vendor-prefix": true,
       "media-feature-name-no-unknown": true,
+      "media-feature-range-notation": "prefix",
 
       "keyframe-declaration-no-important": true,
       "keyframe-selector-notation": "percentage-unless-within-keyword-only-block",
